@@ -77,6 +77,11 @@ Script **[main.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_str
 
 Script **[aws_ingest.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/aws_ingest.py)** é responsável por gerar bucket na AWS S3 e fazer a ingestão dos datasets
 
+## AWS S3
+Os datasets foram ingeridos no S3 utilizando a lib **boto3**, sendo criado um bucket ${AWS::AccountId}-landing-zone. Para cada dataset foi criado uma folder com o seguinte path:
+- users/users_dataset.csv
+- movies_events/movies_events_dataset.json
+
 
 
 
