@@ -69,6 +69,10 @@ O script **lib/movies_database_generator.py** armeza as seguintes classes:
 - `Movies_Events_Generator`: Classe responsável por gerar um conjunto de dados de eventos de usuários que acessaram cada filme
 
 
+O script **lib/writing.py** armeza as seguintes classes:
+- `Writer`: Classe auxiliar responsável por escrita dos datasets
+
+
 Script **main.py** armezana função main responsável por instanciar as classes e chamar métodos para escrever os datasets
 
 Script **aws_ingest.py** é responsável por gerar bucket na AWS S3 e fazer a ingestão dos datasets
