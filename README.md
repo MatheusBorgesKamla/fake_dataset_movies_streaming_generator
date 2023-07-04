@@ -11,4 +11,6 @@ Ou seja, as seguintes etapas deveriam ser realizadas:
 - Criar um Crawler pelo AWS Glue para disponibilizar dados no AWS Athena
 - Escrever exemplos de consultas nos dados utilizando o AWS Athena
 
+## Pipeline Desenvolvido
 
+![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/pipeline.png)
