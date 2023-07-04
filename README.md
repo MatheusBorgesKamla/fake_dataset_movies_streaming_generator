@@ -17,17 +17,38 @@ Para resolução do desafio foi proposto o cenário de um aplicativo de streamin
 
 - `users_dataset.csv` : Dataset de usuários cadastrados na plataforma com as seguintes informações
 
-| coluna     | descricao |
+| coluna     | descrição |
 |------------|-----------|
-| account_id |           |
-| gender     |           |
-| first_name |           |
-| last_name  |           |
-| full_name |           |
-| first_name|           |
-| email|           |
-| address_city |           |
-| first_name |           |
+| account_id |id único do usuário|
+| gender     |genêro (M ou F)|
+| first_name |primeiro nome|
+| last_name  |sobrenome|
+| full_name |nome completo|
+| email| e-mail de cadastro|
+| address_city| cidade|
+| address_state | estado|
+| address_number| número da rua/endereço|
+| address_street| nome da rua|
+| post_code| código postal (cep)|
+| birthday| data de nascimento|
+| registration_date| data de registro na plataforma|
+| churn_date| data de churn (inativação) na plataforma|
+| contracted_plan| plano contratado (Basic, Intermediary ou Premium)|
+
+- `movies_events.json` : Dataset com eventos de filmes acessados/assitidos por cada usuário
+
+| coluna     | descrição |
+|------------|-----------|
+| id |id do filme|
+| name     |nome do filme|
+| img_url |endereço (url) para poster do filme|
+| caption  |legenda do filme|
+| genre | gênero do filme|
+| type| se é um filme mesmo ou uma série|
+| movie_release_date| data de lançamento do filme|
+| datetime | timestamp de quando o filme foi acessado|
+| has_fished| se o usuário finalizou o filme|
+| account_id| id único do usuário|
 
 
 
@@ -37,4 +58,21 @@ Para resolução do desafio foi proposto o cenário de um aplicativo de streamin
 
 
 ## Arquivos
-- O script lib/users_generator.py é responsável por gerar o dataset .csv de usuários cadastrados` 
+
+O script **lib/users_generator.py** armeza as seguintes classes:
+- `User`: Classe responsável por gerar dado de um único usuário a partir da lib Faker
+- `Users_Generator`: Classe responsável por gerar um conjunto de Users e gerar csv
+
+
+O script **lib/movies_database_generator.py** armeza as seguintes classes:
+- `Movie`: Classe responsável por requisitar dados da Rapid API trazendo informações de um filme aleatório
+- `Movies_Events_Generator`: Classe responsável por gerar um conjunto de dados de eventos de usuários que acessaram cada filme
+
+
+Script **main.py** armezana função main responsável por instanciar as classes e chamar métodos para escrever os datasets
+
+Script **aws_ingest.py** é responsável por gerar bucket na AWS S3 e fazer a ingestão dos datasets
+
+
+
+
