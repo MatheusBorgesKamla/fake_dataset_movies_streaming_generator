@@ -11,6 +11,30 @@ Ou seja, as seguintes etapas deveriam ser realizadas:
 - Criar um Crawler pelo AWS Glue para disponibilizar dados no AWS Athena
 - Escrever exemplos de consultas nos dados utilizando o AWS Athena
 
+
+## Projeto proposto
+Para resolução do desafio foi proposto o cenário de um aplicativo de streaming de files e series, sendo gerado dois datasets:
+
+- `users_dataset.csv` : Dataset de usuários cadastrados na plataforma com as seguintes informações
+
+| coluna     | descricao |
+|------------|-----------|
+| account_id |           |
+| gender     |           |
+| first_name |           |
+| last_name  |           |
+| full_name |           |
+| first_name|           |
+| email|           |
+| address_city |           |
+| first_name |           |
+
+
+
 ## Pipeline Desenvolvido
 
 ![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/pipeline.png)
+
+
+## Arquivos
+- O script lib/users_generator.py é responsável por gerar o dataset .csv de usuários cadastrados` 
