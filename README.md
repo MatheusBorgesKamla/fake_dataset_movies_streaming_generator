@@ -59,23 +59,23 @@ Para resolução do desafio foi proposto o cenário de um aplicativo de streamin
 
 ## Arquivos
 
-O script **lib/users_generator.py** armeza as seguintes classes:
+O script **[lib/users_generator.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/libs/users_generator.py)** armeza as seguintes classes:
 - `User`: Classe responsável por gerar dado de um único usuário a partir da lib Faker
 - `Users_Generator`: Classe responsável por gerar um conjunto de Users e gerar csv
 
 
-O script **lib/movies_database_generator.py** armeza as seguintes classes:
+O script **[lib/movies_database_generator.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/libs/movies_database_generator.py)** armeza as seguintes classes:
 - `Movie`: Classe responsável por requisitar dados da Rapid API trazendo informações de um filme aleatório
 - `Movies_Events_Generator`: Classe responsável por gerar um conjunto de dados de eventos de usuários que acessaram cada filme
 
 
-O script **lib/writing.py** armeza as seguintes classes:
+O script **[lib/writing.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/libs/writing.py)** armeza as seguintes classes:
 - `Writer`: Classe auxiliar responsável por escrita dos datasets
 
 
-Script **main.py** armezana função main responsável por instanciar as classes e chamar métodos para escrever os datasets
+Script **[main.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/main.py)** armezana função main responsável por instanciar as classes e chamar métodos para escrever os datasets
 
-Script **aws_ingest.py** é responsável por gerar bucket na AWS S3 e fazer a ingestão dos datasets
+Script **[aws_ingest.py](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/aws_ingest.py)** é responsável por gerar bucket na AWS S3 e fazer a ingestão dos datasets
 
 
 
