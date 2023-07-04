@@ -45,11 +45,14 @@ bucket_name = env_keys["aws_account"] + "-landing-zone"
 if get_bucket(bucket_name, s3_client):
     print("Creating/getting AWS "+bucket_name+" with success")
 
-files = ["users_dataset.csv", "movies_events.json"]
+files = [{"local_path":"users_dataset.csv",
+          "s3_path":"users/users_dataset.csv" 
+         },
+         {"local_path":"movies_events.json",
+          "s3_path":"movies_events/movies_events_dataset.json"
+         }]
 
+"movies_events.json"
 for f in files:
-    folder = "faker_dataset/dt="+datetime.date.today().strftime('%Y-%m-%d')+"/"
-    if ingest_file(f, bucket_name, s3_client, folder+f):
-        print(f"Uploading {folder+f} in {bucket_name} bucket with success")
-
-
+    if ingest_file(f["local_path"], bucket_name, s3_client, f["s3_path"]):
+        print(f"Uploading {f['local_path']} in {bucket_name} bucket with success")
