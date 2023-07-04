@@ -83,8 +83,15 @@ Os datasets foram ingeridos no S3 utilizando a lib **boto3**, sendo criado um bu
 - movies_events/movies_events_dataset.json
 
 ![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/s3_pic1.png)
-![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/s3_pic2.png)
-![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/s3_pic3.png)
 
+## AWS Glue
+O AWS Glue foi utilizado para criar dois crawlers, cada um responsável por disponibilizar os respectivos datasets no AWS Athena. Por enquanto os crawlers estão programados para rodar manualmente:
+![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/crawler.png)
+
+
+## AWS Athena
+No Athena foi realizado as seguintes consultas como exemplo:
+- Quantidade de usuários do sexo masculino e feminino
+![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/athena_query_1.png)
 
 
