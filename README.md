@@ -13,7 +13,7 @@ Ou seja, as seguintes etapas deveriam ser realizadas:
 
 
 ## Projeto proposto
-Para resolução do desafio foi proposto o cenário de um aplicativo de streaming de files e series, sendo gerado dois datasets:
+Para resolução do desafio foi proposto o cenário de um aplicativo de streaming de filmes e series, sendo gerado dois datasets:
 
 - `users_dataset.csv` : Dataset de usuários cadastrados na plataforma com as seguintes informações
 
