@@ -52,7 +52,6 @@ files = [{"local_path":"users_dataset.csv",
           "s3_path":"movies_events/movies_events_dataset.json"
          }]
 
-"movies_events.json"
 for f in files:
     if ingest_file(f["local_path"], bucket_name, s3_client, f["s3_path"]):
         print(f"Uploading {f['local_path']} in {bucket_name} bucket with success")
