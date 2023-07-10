@@ -91,7 +91,16 @@ O AWS Glue foi utilizado para criar dois crawlers, cada um responsável por disp
 
 ## AWS Athena
 No Athena foi realizado as seguintes consultas como exemplo:
-- Quantidade de usuários do sexo masculino e feminino
+
+1 Quantidade de usuários do sexo masculino e feminino
 ![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/athena_query_1.png)
+
+
+2 Filmes mais acessados por usuários (mais populares)
+![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/athena_query_2.png)
+
+
+3 Gênero mais acessados por cada idade de usuário
+![Alt Text](https://github.com/MatheusBorgesKamla/fake_dataset_movies_streaming_generator/blob/main/files/athena_query_3.png)
 
 
